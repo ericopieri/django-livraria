@@ -1,6 +1,12 @@
 from rest_framework.serializers import ModelSerializer
 
-from core.models import Categoria, Editora, Livro
+from core.models import Categoria, Editora, Livro, Autor
+
+
+class AutorSerializer(ModelSerializer):
+    class Meta:
+        model = Autor
+        fields = "__all__"
 
 
 class CategoriaSerializer(ModelSerializer):
