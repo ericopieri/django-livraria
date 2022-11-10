@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "corsheaders",
     "rest_framework",
+    "uploader",
     "core",
     "rest_framework_simplejwt",
 ]
