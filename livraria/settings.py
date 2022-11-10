@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     "uploader",
     "core",
     "rest_framework_simplejwt",
+    "drf_spectacular",
 ]
 
 AUTH_USER_MODEL = "core.Usuario"
