@@ -38,10 +38,6 @@ INSTALLED_APPS = [
 
 AUTH_USER_MODEL = "core.Usuario"
 
-REST_FRAMEWORK = {
-    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
-}
-
 SPECTACULAR_SETTINGS = {
     "TITLE": "Livraria API",
     "DESCRIPTION": "API para gerenciamento de livraria, incluindo endpoints e documentação.",
@@ -52,9 +48,7 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.DjangoModelPermissions",
     ],
-}
-
-REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
