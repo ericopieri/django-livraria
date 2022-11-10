@@ -154,6 +154,20 @@ optional = false
 python-versions = ">=3.5"
 
 [[package]]
+name = "isort"
+version = "5.10.1"
+description = "A Python utility / library to sort Python imports."
+category = "dev"
+optional = false
+python-versions = ">=3.6.1,<4.0"
+
+[package.extras]
+pipfile_deprecated_finder = ["pipreqs", "requirementslib"]
+requirements_deprecated_finder = ["pipreqs", "pip-api"]
+colors = ["colorama (>=0.4.3,<0.5.0)"]
+plugins = ["setuptools"]
+
+[[package]]
 name = "jsonschema"
 version = "4.17.0"
 description = "An implementation of JSON Schema validation for Python"
@@ -295,7 +309,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "flake8 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "729da39c3eb44612d925143f5d58fac0a60bff28df438938c93caa9cc5c9f9e6"
+content-hash = "1dbb58503a38e4b58a9439e5ac9b801ab244786659e7cf808bdeec5d0c9134f4"
 
 [metadata.files]
 asgiref = [
@@ -312,6 +326,7 @@ drf-spectacular = []
 gunicorn = []
 importlib-resources = []
 inflection = []
+isort = []
 jsonschema = []
 libmagic = []
 pillow = []
