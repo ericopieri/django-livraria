@@ -1,22 +1,12 @@
-# Livraria fictício com o intuito acadêmico
+# Fictional Bookstore for Academic Purposes
 
+## Poetry Required for Project Execution!!!
 
-## Necessário o poetry para rodar o projeto!!!
-
-
-### Instalação dos pacotes...
-```
+### Installing Dependencies...
 poetry install
-```
 
-
-### Criando e entrando na VirtualEnv...
-```
+### Creating and Activating the Virtual Environment...
 poetry shell
-```
 
-
-### Botando o projeto em execução (necessário estar na pasta raiz)...
-```
+### Running the Project (ensure you are in the root directory)...
 manage.py runserver
-```
